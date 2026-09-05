@@ -10,6 +10,11 @@
         {
             Console.WriteLine($"book title{ title}");
         }
+        public static void addbounspages(int pages)
+        {
+            pages = pages + 50;
+            Console.WriteLine(pages);
+        }
         static void Main(string[] args)
         {
             #region question1 
@@ -37,8 +42,14 @@
 
             #region question 4
             string title = "bbb";
-            printbooktitle(title); 
+            printbooktitle(title);
             #endregion
+            #region QUESTION 5
+            int pages = 400;
+            addbounspages(pages);
+
+            #endregion
+
 
 
         }
