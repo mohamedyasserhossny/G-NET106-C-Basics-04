@@ -1,4 +1,6 @@
-﻿namespace assigment_4_route
+﻿using System.Diagnostics;
+
+namespace assigment_4_route
 {
     internal class Program
     {
@@ -15,15 +17,20 @@
             pages = pages + 50;
             Console.WriteLine(pages);
         }
-        public static void ApplyDiscount(double[] prices)
-        {
-            prices[0] = prices[0] - 5;
-            Console.WriteLine(prices[0]);
-        }
+        //public static void ApplyDiscount(double[] prices)
+        //{
+        //    prices[0] = prices[0] - 5;
+        //    Console.WriteLine(prices[0]);
+        //}
        public  static void AddBonusPagesByRef(ref int pages)
         {
             pages = pages + 10;
             Console.WriteLine(pages);
+        }
+        public static void ReplaceArray(ref double[] prices)
+        {
+            prices = new double[] { 10.0, 12.5, 15.0 };
+            Console.WriteLine(prices.Length);
         }
         static void Main(string[] args)
         {
@@ -60,13 +67,18 @@
 
             #endregion
             #region question6
-            double[] prices = { 25.5, 40.0 };
-            ApplyDiscount(prices);
+            //double[] prices = { 25.5, 40.0 };
+            //ApplyDiscount(prices);
             #endregion
             #region question 7
             int pages = 400;
             AddBonusPagesByRef(ref pages);
             #endregion
+            #region question 8
+            double[] prices = { 25.5, 40.0 };
+            ReplaceArray(ref prices);
+            #endregion
+
 
 
 
