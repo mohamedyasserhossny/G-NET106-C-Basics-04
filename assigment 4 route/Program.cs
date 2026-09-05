@@ -6,6 +6,10 @@
         {
             Console.WriteLine("Welcome to the Library!");
         }
+        public static void printbooktitle(string title)
+        {
+            Console.WriteLine($"book title{ title}");
+        }
         static void Main(string[] args)
         {
             #region question1 
@@ -30,6 +34,12 @@
             #region question3 
             PrintWelcomeMessage();
             #endregion
+
+            #region question 4
+            string title = "bbb";
+            printbooktitle(title); 
+            #endregion
+
 
         }
     }
