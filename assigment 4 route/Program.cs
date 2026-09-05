@@ -32,12 +32,24 @@ namespace assigment_4_route
             prices = new double[] { 10.0, 12.5, 15.0 };
             Console.WriteLine(prices.Length);
         }
+        public static bool TryGetPrice(string title, out double price)
+        {
+            if (title == "Clean Code")
+            {
+                price = 25.5;
+                return true;
+            }
+
+            price = 0;
+            return false;
+        }
+
         static void Main(string[] args)
         {
-            #region question1 
-            double[] price = [25.5, 40.0, 33.75];
-            Console.WriteLine(price[1]);
-            #endregion
+            //#region question1 
+            //double[] price = [25.5, 40.0, 33.75];
+            //Console.WriteLine(price[1]);
+            //#endregion
             #region question2 
             int[,] shelfCopies = new int[2, 2];
             shelfCopies[0, 0] = 3;
@@ -77,6 +89,15 @@ namespace assigment_4_route
             #region question 8
             double[] prices = { 25.5, 40.0 };
             ReplaceArray(ref prices);
+            #endregion
+            #region question 9
+            double price;
+
+            if (TryGetPrice("Clean Code", out price))
+            {
+                Console.WriteLine(price);
+            }
+
             #endregion
 
 
