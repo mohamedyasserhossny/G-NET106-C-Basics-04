@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            #region question1 
+            double[] price = [25.5, 40.0, 33.75];
+            Console.WriteLine(price[1]);
+            #endregion
         }
     }
 }
