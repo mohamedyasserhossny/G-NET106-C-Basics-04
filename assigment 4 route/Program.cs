@@ -15,6 +15,11 @@
             pages = pages + 50;
             Console.WriteLine(pages);
         }
+        public static void ApplyDiscount(double[] prices)
+        {
+            prices[0] = prices[0] - 5;
+            Console.WriteLine(prices[0]);
+        }
         static void Main(string[] args)
         {
             #region question1 
@@ -48,6 +53,10 @@
             int pages = 400;
             addbounspages(pages);
 
+            #endregion
+            #region question6
+            double[] prices = { 25.5, 40.0 };
+            ApplyDiscount(prices);
             #endregion
 
 
