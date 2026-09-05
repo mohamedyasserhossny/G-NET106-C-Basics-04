@@ -2,6 +2,10 @@
 {
     internal class Program
     {
+        public static void PrintWelcomeMessage()
+        {
+            Console.WriteLine("Welcome to the Library!");
+        }
         static void Main(string[] args)
         {
             #region question1 
@@ -23,6 +27,10 @@
                 Console.WriteLine();
             }
             #endregion
+            #region question3 
+            PrintWelcomeMessage();
+            #endregion
+
         }
     }
 }
