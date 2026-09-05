@@ -20,6 +20,11 @@
             prices[0] = prices[0] - 5;
             Console.WriteLine(prices[0]);
         }
+       public  static void AddBonusPagesByRef(ref int pages)
+        {
+            pages = pages + 10;
+            Console.WriteLine(pages);
+        }
         static void Main(string[] args)
         {
             #region question1 
@@ -50,14 +55,19 @@
             printbooktitle(title);
             #endregion
             #region QUESTION 5
-            int pages = 400;
-            addbounspages(pages);
+            //int pages = 400;
+            //addbounspages(pages);
 
             #endregion
             #region question6
             double[] prices = { 25.5, 40.0 };
             ApplyDiscount(prices);
             #endregion
+            #region question 7
+            int pages = 400;
+            AddBonusPagesByRef(ref pages);
+            #endregion
+
 
 
 
